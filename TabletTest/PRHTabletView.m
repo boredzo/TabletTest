@@ -42,7 +42,7 @@
 
 - (NSRect) rectForImage:(NSImage *)image toBeDrawnCenteredAtPoint:(NSPoint)center {
 	NSSize size = image.size;
-	NSPoint origin = { lastScribbledPoint.x - size.width / 2.0, lastScribbledPoint.y - size.height / 2.0 };
+	NSPoint origin = { center.x - size.width / 2.0, center.y - size.height / 2.0 };
 	return (NSRect){ origin, size };
 }
 
