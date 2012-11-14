@@ -59,7 +59,8 @@
 	self.tiltXField.doubleValue = self.tiltXSlider.doubleValue = event.tilt.x;
 	self.tiltYField.doubleValue = self.tiltYSlider.doubleValue = event.tilt.y;
 
-	self.pressureField.floatValue = self.pressureSlider.floatValue = event.tangentialPressure;
+	self.pressureField.floatValue = self.pressureSlider.floatValue = event.pressure;
+	self.tangentialPressureField.floatValue = self.tangentialPressureSlider.floatValue = event.tangentialPressure;
 
 	[self.pointingDeviceTypeRadio selectCellAtRow:0 column:event.pointingDeviceType];
 
