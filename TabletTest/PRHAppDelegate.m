@@ -8,11 +8,20 @@
 
 #import "PRHAppDelegate.h"
 
-@implementation PRHAppDelegate
+#import "PRHTabletWindowController.h"
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+@implementation PRHAppDelegate
 {
-	// Insert code here to initialize your application
+	PRHTabletWindowController *wc;
+}
+
+- (void) applicationWillFinishLaunching:(NSNotification *)notification {
+	wc = [PRHTabletWindowController new];
+	[wc showWindow:nil];
+}
+- (void) applicationWillTerminate:(NSNotification *)notification {
+	[wc close];
+	wc = nil;
 }
 
 @end

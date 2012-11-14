@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2A69500B8CB6ED04F9D8F0 /* PRHTabletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A6E23285B0A89E2509DBF /* PRHTabletView.m */; };
 		31E427CF165424E20000A6D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E427CE165424E20000A6D1 /* Cocoa.framework */; };
 		31E427D9165424E20000A6D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31E427D7165424E20000A6D1 /* InfoPlist.strings */; };
 		31E427DB165424E20000A6D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E427DA165424E20000A6D1 /* main.m */; };
 		31E427DF165424E20000A6D1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 31E427DD165424E20000A6D1 /* Credits.rtf */; };
 		31E427E2165424E20000A6D1 /* PRHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E427E1165424E20000A6D1 /* PRHAppDelegate.m */; };
 		31E427E5165424E20000A6D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E427E3165424E20000A6D1 /* MainMenu.xib */; };
+		31E427EE165425170000A6D1 /* PRHTabletWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E427EC165425170000A6D1 /* PRHTabletWindowController.m */; };
+		31E427F0165425220000A6D1 /* PRHTabletWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E427F2165425220000A6D1 /* PRHTabletWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2A6CCF0B8583D8E8971424 /* PRHTabletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHTabletView.h; sourceTree = "<group>"; };
+		1B2A6E23285B0A89E2509DBF /* PRHTabletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHTabletView.m; sourceTree = "<group>"; };
 		31E427CA165424E20000A6D1 /* TabletTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabletTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E427CE165424E20000A6D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		31E427D1165424E20000A6D1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +34,9 @@
 		31E427E0165424E20000A6D1 /* PRHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRHAppDelegate.h; sourceTree = "<group>"; };
 		31E427E1165424E20000A6D1 /* PRHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRHAppDelegate.m; sourceTree = "<group>"; };
 		31E427E4165424E20000A6D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		31E427EB165425170000A6D1 /* PRHTabletWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHTabletWindowController.h; sourceTree = "<group>"; };
+		31E427EC165425170000A6D1 /* PRHTabletWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHTabletWindowController.m; sourceTree = "<group>"; };
+		31E427F1165425220000A6D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRHTabletWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +93,12 @@
 				31E427E0165424E20000A6D1 /* PRHAppDelegate.h */,
 				31E427E1165424E20000A6D1 /* PRHAppDelegate.m */,
 				31E427E3165424E20000A6D1 /* MainMenu.xib */,
+				31E427EB165425170000A6D1 /* PRHTabletWindowController.h */,
+				31E427EC165425170000A6D1 /* PRHTabletWindowController.m */,
+				31E427F2165425220000A6D1 /* PRHTabletWindowController.xib */,
 				31E427D5165424E20000A6D1 /* Supporting Files */,
+				1B2A6E23285B0A89E2509DBF /* PRHTabletView.m */,
+				1B2A6CCF0B8583D8E8971424 /* PRHTabletView.h */,
 			);
 			path = TabletTest;
 			sourceTree = "<group>";
@@ -157,6 +170,7 @@
 				31E427D9165424E20000A6D1 /* InfoPlist.strings in Resources */,
 				31E427DF165424E20000A6D1 /* Credits.rtf in Resources */,
 				31E427E5165424E20000A6D1 /* MainMenu.xib in Resources */,
+				31E427F0165425220000A6D1 /* PRHTabletWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +183,8 @@
 			files = (
 				31E427DB165424E20000A6D1 /* main.m in Sources */,
 				31E427E2165424E20000A6D1 /* PRHAppDelegate.m in Sources */,
+				31E427EE165425170000A6D1 /* PRHTabletWindowController.m in Sources */,
+				1B2A69500B8CB6ED04F9D8F0 /* PRHTabletView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +213,14 @@
 				31E427E4165424E20000A6D1 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		31E427F2165425220000A6D1 /* PRHTabletWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31E427F1165425220000A6D1 /* en */,
+			);
+			name = PRHTabletWindowController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
